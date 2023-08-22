@@ -1,0 +1,83 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Chip } from '../Chip';
+
+<Meta title="docs/Chip" component={Chip} />
+
+# Chip
+
+A chip represents a keyword that helps label, organize and categorize content.
+
+## When to use
+
+<ul>
+  <li>To categorize content allowing the user to quickly skim a list of items.</li>
+  <li>To group items together such as a filter list.</li>
+</ul>
+
+<ArgsTable of={Chip} />
+
+### Chip list
+
+Related chips can be grouped together.
+
+<Canvas>
+  <Story
+    name="chip-list-item-1"
+    args={{
+      hasClose: true,
+      name: 'chip',
+    }}
+  >
+    {args => <Chip {...args} />}
+  </Story>
+  <Story
+    name="chip-list-item-2"
+    args={{
+      hasClose: true,
+      name: 'chip',
+    }}
+  >
+    {args => <Chip {...args} />}
+  </Story>
+  <Story
+    name="chip-list-item-3"
+    args={{
+      hasClose: true,
+      name: 'chip',
+    }}
+  >
+    {args => <Chip {...args} />}
+  </Story>
+</Canvas>
+
+### Removable
+
+A chip can be removable by specifying an onClick handler.
+
+<Canvas>
+  <Story
+    name="chip-with-Removable"
+    args={{
+      hasClose: true,
+      name: 'chip',
+    }}
+  >
+    {args => <Chip {...args} />}
+  </Story>
+</Canvas>
+
+### Custom Style
+
+Custom styles can be applied to a chip. You’ll be responsible to ensure that the custom style contrast is accessible.
+
+<Canvas>
+  <Story
+    name="chip-with-custom-style"
+    args={{
+      name: 'chip',
+      className: 'bg-yellow-400 text-white',
+    }}
+  >
+    {args => <Chip {...args} />}
+  </Story>
+</Canvas>

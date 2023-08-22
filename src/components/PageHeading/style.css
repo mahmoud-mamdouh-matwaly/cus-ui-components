@@ -1,0 +1,12 @@
+.pageHeading__container {
+  @apply lg:flex lg:items-center lg:justify-between mx-auto px-4 sm:px-6 lg:px-8;
+}
+.pagHeading__title {
+  @apply flex-1 min-w-0;
+}
+.pagHeading__title h2 {
+  @apply text-2xl font-bold leading-7 text-gray-900 capitalize sm:text-3xl sm:truncate;
+}
+.pageHeading__actions {
+  @apply mt-5 flex lg:mt-0 lg:ml-4;
+}

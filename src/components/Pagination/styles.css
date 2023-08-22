@@ -1,0 +1,34 @@
+.pagination-container {
+  @apply flex justify-center w-full mt-4;
+}
+
+.pagination-item {
+  @apply flex items-center justify-center rounded py-2 px-4 my-auto mx-1 h-8 text-sm font-semibold text-gray-500 w-8 hover:bg-gray-500 hover:cursor-pointer hover:text-white;
+}
+.pagination-item.active {
+  @apply bg-gray-500 text-white;
+}
+.pagination-item .dots:hover {
+  @apply bg-transparent cursor-default;
+}
+
+.pagination-item.arrow {
+  @apply bg-gray-500;
+}
+
+.pagination-item.arrow.disabled {
+  @apply pointer-events-none opacity-50;
+}
+
+.pagination-item .arrow::before {
+  content: '';
+  @apply w-2 h-2 inline-block relative border-r-2 border-r-white border-t-2 border-t-white;
+}
+
+.pagination-item .arrow.left {
+  transform: rotate(-135deg) translate(-10%);
+}
+
+.pagination-item .arrow.right {
+  transform: rotate(45deg) translate(-10%);
+}

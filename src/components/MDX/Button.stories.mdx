@@ -1,0 +1,236 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Button } from '../Button';
+
+<Meta
+  title="docs/Button"
+  component={Button}
+  argTypes={{
+    variant: {
+      options: ['primary', 'secondary', 'disabled'],
+      control: { type: 'radio' },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    size: {
+      options: ['small', 'medium', 'large'],
+      control: { type: 'radio' },
+    },
+    type: {
+      options: ['button', 'submit', 'reset'],
+      control: { type: 'radio' },
+    },
+  }}
+/>
+
+# Button
+
+A button indicates a possible user action.
+
+<ArgsTable of={Button} />
+
+### Button with (variant primary)
+
+Buttons with diffrent size and included icon you can reverse icon with `reverse` props its boolean value.
+
+<Canvas>
+  <Story
+    name="primary"
+    args={{
+      variant: 'primary',
+      size: 'large',
+      text: 'large',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path
+            fillRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      ),
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="primary-medium"
+    args={{
+      variant: 'primary',
+      size: 'medium',
+      text: 'medium',
+      reverse: true,
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path
+            fillRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      ),
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="primary-small"
+    args={{
+      variant: 'primary',
+      size: 'small',
+      text: 'small',
+      reverse: false,
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path
+            fillRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      ),
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+</Canvas>
+
+### Button with (variant secondary)
+
+Buttons with diffrent size.
+
+<Canvas>
+  <Story
+    name="secondary"
+    args={{
+      variant: 'secondary',
+      size: 'large',
+      text: 'large',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="secondary-medium"
+    args={{
+      variant: 'secondary',
+      size: 'medium',
+      text: 'medium',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="secondary-small"
+    args={{
+      variant: 'secondary',
+      size: 'small',
+      text: 'small',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+</Canvas>
+
+### Button with (variant Disabled)
+
+Buttons with diffrent size and you can set `disabled` props its boolean value.
+
+<Canvas>
+  <Story
+    name="disabled"
+    args={{
+      variant: 'disabled',
+      size: 'large',
+      text: 'large',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="disabled-medium"
+    args={{
+      variant: 'disabled',
+      size: 'medium',
+      text: 'medium',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="disabled-small"
+    args={{
+      variant: 'disabled',
+      size: 'small',
+      text: 'small',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+</Canvas>
+
+### Button with (variant Tertiary)
+
+Buttons with diffrent size.
+
+<Canvas>
+  <Story
+    name="tertiary"
+    args={{
+      variant: 'tertiary',
+      size: 'large',
+      text: 'large',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="tertiary-medium"
+    args={{
+      variant: 'tertiary',
+      size: 'medium',
+      text: 'medium',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="tertiary-small"
+    args={{
+      variant: 'tertiary',
+      size: 'small',
+      text: 'small',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+</Canvas>
+
+### Button with (className)
+
+you can add some custom style at Button as `className` props.
+
+<Canvas>
+  <Story
+    name="classname"
+    args={{
+      size: 'large',
+      text: 'large',
+      className: 'bg-yellow-400 text-white border-transparent',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+  <Story
+    name="classname-medium"
+    args={{
+      size: 'medium',
+      text: 'medium',
+      className: 'border-yellow-400',
+    }}
+  >
+    {args => <Button {...args} />}
+  </Story>
+</Canvas>

@@ -1,0 +1,3 @@
+.empty {
+  @apply m-6 font-sans text-base text-gray-600 text-center border border-gray-100 rounded p-6 font-semibold;
+}

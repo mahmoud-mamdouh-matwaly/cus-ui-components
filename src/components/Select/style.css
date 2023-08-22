@@ -1,0 +1,21 @@
+label {
+  @apply text-base font-medium capitalize mb-2 block;
+}
+
+.select {
+  min-width: 15ch;
+  max-width: 30ch;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  @apply w-full border border-solid border-gray-400 rounded cursor-pointer bg-white text-base px-2 py-1 leading-tight;
+}
+
+.select::after {
+  content: '';
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  @apply border-gray-400 w-3 h-2;
+}
+
+.select--disabled {
+  background-image: linear-gradient(to top, #ddd, #eee 33%);
+  @apply cursor-not-allowed bg-gray-500;
+}

@@ -1,0 +1,33 @@
+.accordion__container {
+  @apply w-full border border-gray-100 p-2 rounded-md cursor-pointer;
+}
+.accordion__wrapper {
+  @apply flex flex-col justify-between;
+}
+
+.accordion__header {
+  @apply flex justify-between items-center;
+}
+.accordion__header--space {
+  @apply pb-3;
+}
+.accordion__content {
+  @apply hidden py-3 border-t border-gray-100;
+}
+.accordion__content.active {
+  @apply block;
+}
+.accordion__content p {
+  @apply mt-4 mb-4 break-words;
+}
+.accordion__container .arrow {
+  @apply w-0 h-0 border-r-4	border-l-4 border-solid border-r-transparent	border-l-transparent;
+}
+
+.accordion__container .arrow.up {
+  @apply border-b-4	border-solid border-b-gray-500;
+}
+
+.accordion__container .arrow.down {
+  @apply border-t-4	border-solid border-t-gray-500;
+}

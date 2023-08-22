@@ -1,0 +1,18 @@
+.breadcrumb {
+  @apply mb-1 mx-auto px-4 sm:px-6 lg:px-8;
+}
+.breadcrumb li {
+  @apply inline text-sm;
+}
+.breadcrumb li + li {
+  @apply before:p-2 text-gray-500 before:content-['/\00a0'];
+}
+.breadcrumb li a {
+  @apply text-gray-500;
+}
+.breadcrumb li:last-child a {
+  @apply pointer-events-none;
+}
+.breadcrumb li a:hover {
+  @apply text-gray-800;
+}

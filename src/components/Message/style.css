@@ -1,0 +1,23 @@
+.message {
+  @apply m-4 font-sans text-sm flex flex-col border rounded p-4 text-slate-900;
+}
+
+.message__title {
+  @apply text-base capitalize mb-2;
+}
+
+.message--error {
+  @apply border-red-200 bg-red-100 text-red-700;
+}
+
+.message--info {
+  @apply border-sky-200 bg-sky-100 text-sky-700;
+}
+
+.message--success {
+  @apply border-green-200 bg-green-100 text-green-700;
+}
+
+.message--warning {
+  @apply border-yellow-200 bg-yellow-100 text-yellow-700;
+}

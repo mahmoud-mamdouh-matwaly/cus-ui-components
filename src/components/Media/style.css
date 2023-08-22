@@ -1,0 +1,31 @@
+.media {
+  @apply flex max-w-full overflow-hidden rounded-lg;
+}
+.media--width {
+  @apply w-1/4;
+}
+.media--vertical {
+  @apply flex-col items-center;
+}
+.media--vertical .media__content {
+  @apply ml-0 mt-1 text-center;
+}
+
+.media__img {
+  @apply w-12 bg-gray-300 overflow-hidden pb-12 relative rounded-full;
+}
+
+.media__img img {
+  @apply absolute w-full object-cover h-full left-0 top-0 shadow-inner;
+}
+
+.media__content {
+  @apply ml-2;
+}
+
+.media__title {
+  @apply text-base capitalize font-semibold;
+}
+.media__subtitle {
+  @apply text-sm text-gray-500;
+}

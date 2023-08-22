@@ -1,0 +1,55 @@
+.btn {
+  @apply flex items-center border cursor-pointer font-bold rounded-lg capitalize py-2 px-4;
+}
+
+.btn svg,
+.btn img {
+  @apply h-5 w-5 ml-2;
+}
+
+.btn--reverse {
+  @apply flex-row-reverse;
+}
+
+.btn--reverse svg,
+.btn--reverse img {
+  @apply ml-0 mr-2;
+}
+
+.btn--primary {
+  @apply text-white bg-blue-500 border-0;
+}
+
+.btn--secondary {
+  @apply text-zinc-700 bg-transparent border-slate-200;
+}
+
+.btn--disabled {
+  @apply bg-neutral-100 cursor-not-allowed;
+}
+
+.btn--tertiary {
+  @apply border-0;
+}
+
+.btn--small {
+  @apply text-sm py-2 px-3;
+}
+
+.btn--small svg,
+.btn--small img {
+  @apply h-4 w-4;
+}
+
+.btn--medium {
+  @apply text-base py-3 px-4;
+}
+
+.btn--large {
+  @apply text-xl py-4 px-7;
+}
+
+.btn--large svg,
+.btn--large img {
+  @apply h-5 w-5;
+}
