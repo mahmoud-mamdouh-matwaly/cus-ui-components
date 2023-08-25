@@ -1,11 +1,14 @@
 {
-  "name": "custom-ui-components",
+  "name": "@mahmoud-mamdouh-matwaly/cus-ui-components",
   "version": "1.0.1",
   "description": "",
   "author": "Mahmoud Mamdouh",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/mahmoud-mamdouh-matwaly"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mahmoud-mamdouh-matwaly/custom-ui-components"
+    "url": "https://github.com/mahmoud-mamdouh-matwaly/cus-ui-components"
   },
   "contributors": [
     {
@@ -13,6 +16,7 @@
       "email": "mahmoud.m.alawady@gmail.com"
     }
   ],
+  
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
