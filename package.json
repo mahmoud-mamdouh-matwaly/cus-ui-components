@@ -3,9 +3,6 @@
   "version": "1.0.2",
   "description": "",
   "author": "Mahmoud Mamdouh",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/mahmoud-mamdouh-matwaly"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mahmoud-mamdouh-matwaly/cus-ui-components"
